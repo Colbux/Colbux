@@ -1,0 +1,201 @@
+<resources>
+	 <string name="app_name" translatable="false">Colbux</string>
+    <string name="nav_home_text" translatable="false">Home</string>
+    <string name="nav_modifications_text" translatable="false">Modifications</string>
+    <string name="nav_servers_text" translatable="false">Servers</string>
+    <string name="nav_fordevs_text" translatable="false">For devs</string>
+    <string name="textures_modifications_tab_text" translatable="false">Textures</string>
+    <string name="mods_modifications_tab_text" translatable="false">Mods</string>
+    <string name="maps_modifications_tab_text" translatable="false">Maps</string>
+    <string name="plugins_fordevs_tab_text" translatable="false">Plugins</string>
+    <string name="linear_download_blocklauncher_description" translatable="false">Download a modified version of BlockLauncher to install mods and patches</string>
+    <string name="btn_download_blocklauncher" translatable="false">Download</string>
+    <string name="btn_forum_onlongclicked" translatable="false">Old MCPE forum</string>
+     <string name="btn_upload_content_onlongclicked" translatable="false">Upload content </string>
+     <string name="btn_settings_onlongclicked" translatable="false">Settings</string>
+     <string name="copyServerData_onlongclicked" translatable="false">Copy server data</string>
+     <string name="serverDiscord" translatable="false">Link to Discord server</string>
+     <string name="download_button_text" translatable="false">Download</string>
+     <string name="copyServerData_onlongclicked_toast" translatable="false">Server Ip and port copied</string>
+     <string name="btn_mod_more_info_onlongclicked" translatable="false">More information about the mod</string>
+     <string name="btn_mod_more_info_error_not_founded_url" translatable="false">Could not find URL</string>
+     <string name="btn_plugin_more_info_onlongclicked" translatable="false">More information about the plugin</string>
+     <string name="btn_plugin_more_info_error_not_founded_url" translatable="false">Could not find URL</string>
+     <string name="server_monitoring_text" translatable="false">Server monitoring</string>
+     <string name="monitoring_onlongclicked" translatable="false">Link to monitoring</string>
+     <string name="server_doesnt_have_monitoring_toast" translatable="false">Server doesnt have monitoring</string>
+     <string name="btn_more_info_text" translatable="false">More information</string>
+     <string name="btn_write_comment_text" translatable="false">Write</string>
+     <string name="comments_text" translatable="false">Comments</string>
+     <string name="android_error_dialog_title" translatable="false">Attention</string>
+     <string name="android_error_dialog_message" translatable="false">Unfortunately, downloading content for Android 12+ has a lot of problems, due to which you will not be able to download anything</string>
+     <string name="android_error_dialog_button1" translatable="false">Go anyway</string>
+     
+     <string name="download_title" translatable="false">Download</string>
+     <string name="download_dialog_download_started_toast" translatable="false">Download started</string>
+     <string name="download_dialog_download_successful_toast" translatable="false">Download Complete</string>
+     <string name="download_dialog_error_title" translatable="false">Error</string>
+     <string name="download_dialog_error_message" translatable="false">An error occurred while trying to get the download link.  Please try again.</string>
+     <string name="download_dialog_error_not_founded_url" translatable="false">Could not find download URL</string>
+     <string name="download_dialog_error_url_has_expired" translatable="false">Download link expired</string>
+     <string name="settings_activity_toolbar_text" translatable="false">Settings</string>
+     <string name="settings_activity_linear_language_text" translatable="false">Language</string>
+     <string name="upload_content_dialog_title" translatable="false">What do you want to upload?</string>
+     <string name="upload_content_dialog_cancel_button" translatable="false">Close</string>
+     
+     <string name="uploading_file_dialog_title" translatable="false">Uploading files to server</string>
+     <string name="uploading_file_dialog_message" translatable="false">It can take some time. Do not close this window.</string>
+     <string name="uploading_file_successful" translatable="false">File successfully uploaded</string>
+     <string name="uploading_banner_successfully" translatable="false">Banner successful uploaded</string>
+     
+     <string name="uploaded_by_text" translatable="false">Uploaded by</string>
+     
+     <string name="open_link_dialog_title" translatable="false">Following a link</string>
+     <string name="open_link_dialog_message" translatable="false">Are you sure you want to go to⠀</string>
+     <string name="open_link_dialog_ok_button" translatable="false">Yes</string>
+     <string name="open_link_dialog_cancel_button" translatable="false">Cancel</string>
+     
+     <string name="setting_popup_upload_content_text" translatable="false">Upload content</string>
+     <string name="setting_popup_change_language_text" translatable="false">Change language</string>
+     <string name="setting_popup_skin_manager_text" translatable="false">Skin manager</string>
+     <string name="setting_popup_help_text" translatable="false">Help</string>
+     <string name="setting_popup_forum_text" translatable="false">Forum</string>
+     <string name="setting_popup_profile_text" translatable="false">Profile</string>
+     <string name="setting_popup_logout_text" translatable="false">Log out</string>
+     
+     <string name="upload_content_title" translatable="false">Upload content</string>
+     <string name="upload_content_description" translatable="false">What do you want to upload?</string>
+     <string name="upload_content_name_text" translatable="false">Name</string>
+     <string name="upload_content_description_text" translatable="false">Short description</string>
+     <string name="upload_content_full_description_text" translatable="false">Full description</string>
+     <string name="upload_content_mcpe_version_text" translatable="false">MCPE Version</string>
+     <string name="upload_content_link_to_banner_text" translatable="false">Banner</string>
+     <string name="upload_content_link_to_download_text" translatable="false">File</string>
+     <string name="upload_content_link_to_more_info_text" translatable="false">Link to additional information, if available</string>
+     <string name="upload_content_link_to_monitoring_text" translatable="false">Link to monitoring</string>
+     <string name="upload_content_more_info_text" translatable="false">Detailed information</string>
+     <string name="upload_content_data_text" translatable="false">IP and Port</string>
+     <string name="upload_content_link_to_discord_text" translatable="false">Link to Discord</string>
+     <string name="upload_content_apiversion_text" translatable="false">PocketMine version / other</string>
+     <string name="texture_text" translatable="false">Texture</string>
+     <string name="mod_text" translatable="false">Mod</string>
+     <string name="map_text" translatable="false">Map</string>
+     <string name="server_text" translatable="false">Server</string>
+     <string name="plugin_text" translatable="false">Plugin</string>
+     <string name="fill_in_all_the_fields_toast" translatable="false">Fill in all the fields</string>
+     <string name="choose_file_toast" translatable="false">Select file to download</string>
+     <string name="choose_banner_toast" translatable="false">Choose an image for the banner</string>
+     <string name="file_size_error_toast" translatable="false">File size cannot be higher than 25 MB</string>
+     <string name="empty_file_error_toast" translatable="false">Cannot upload empty file</string>
+     <string name="file_not_found_toast" translatable="false">File not found</string>
+     
+     <string name="upload_texture_title" translatable="false">Upload new texture</string>
+     <string name="upload_texture_message" translatable="false">Fill in all the fields</string>
+     <string name="upload_texture_ok_button" translatable="false">Upload</string>
+     <string name="upload_texture_cancel_button" translatable="false">Cancel</string>
+     <string name="upload_texture_edittext_name" translatable="false">Texture name</string>
+     <string name="upload_texture_edittext_description" translatable="false">Description</string>
+     <string name="upload_texture_edittext_version" translatable="false">MCPE Version</string>
+     <string name="upload_texture_edittext_link_to_banner" translatable="false">Link to banner</string>
+     <string name="upload_texture_edittext_link_to_download" translatable="false">Link to download (Only Mediafire)</string>
+     <string name="new_texture_uploaded_toast" translatable="false">New texture successfully published</string>
+     
+     <string name="upload_mod_title" translatable="false">Upload new mod</string>
+     <string name="upload_mod_message" translatable="false">Fill in all the fields</string>
+     <string name="upload_mod_ok_button" translatable="false">Upload</string>
+     <string name="upload_mod_cancel_button" translatable="false">Cancel</string>
+     <string name="upload_mod_edittext_name" translatable="false">Mod name</string>
+     <string name="upload_mod_edittext_description" translatable="false">Description</string>
+     <string name="upload_mod_edittext_version" translatable="false">MCPE Version</string>
+     <string name="upload_mod_edittext_moreinfo" translatable="false">Detailed information about mod</string>
+     <string name="upload_mod_edittext_link_to_download" translatable="false">Link to download (Only Mediafire)</string>
+     <string name="new_mod_uploaded_toast" translatable="false">New mod successfully published</string>
+     
+     <string name="upload_map_title" translatable="false">Upload new map</string>
+     <string name="upload_map_message" translatable="false">Fill in all the fields</string>
+     <string name="upload_map_ok_button" translatable="false">Upload</string>
+     <string name="upload_map_cancel_button" translatable="false">Cancel</string>
+     <string name="upload_map_edittext_name" translatable="false">Map name</string>
+     <string name="upload_map_edittext_version" translatable="false">MCPE Version</string>
+     <string name="upload_map_edittext_link_to_banner" translatable="false">Link to banner</string>
+     <string name="upload_map_edittext_link_to_download" translatable="false">Link to download (Only Mediafire)</string>
+     <string name="new_map_uploaded_toast" translatable="false">New map successfully published</string>
+     
+     <string name="upload_server_title" translatable="false">Upload new server</string>
+     <string name="upload_server_message" translatable="false">Fill in all the fields</string>
+     <string name="upload_server_ok_button" translatable="false">Upload</string>
+     <string name="upload_server_cancel_button" translatable="false">Cancel</string>
+     <string name="upload_server_edittext_name" translatable="false">Server name</string>
+     <string name="upload_server_edittext_description" translatable="false">Brief description of the server</string>
+     <string name="upload_server_edittext_ip" translatable="false">IP</string>
+     <string name="upload_server_edittext_port" translatable="false">Port</string>
+     <string name="upload_server_edittext_version" translatable="false">MCPE Version</string>
+     <string name="upload_server_edittext_link_to_discord" translatable="false">Link to Discord server</string>
+     <string name="upload_server_edittext_link_to_banner" translatable="false">Link to banner</string>
+     <string name="upload_server_edittext_link_to_monitoring" translatable="false">Link to monitoring</string>
+     <string name="new_server_uploaded_toast" translatable="false">New server successfully published</string>
+     
+     <string name="upload_plugin_title" translatable="false">Upload new plugin</string>
+     <string name="upload_plugin_message" translatable="false">Fill in all the fields</string>
+     <string name="upload_plugin_ok_button" translatable="false">Upload</string>
+     <string name="upload_plugin_cancel_button" translatable="false">Cancel</string>
+     <string name="upload_plugin_edittext_name" translatable="false">Plugin name</string>
+     <string name="upload_plugin_edittext_description" translatable="false">Short description of the plugin </string>
+     <string name="upload_plugin_edittext_full_description" translatable="false">Full plugin description</string>
+     <string name="upload_plugin_edittext_api" translatable="false">API Version / PocketMine / other</string>
+     <string name="upload_plugin_edittext_more_info" translatable="false">Link to detailed information about the plugin</string>
+     <string name="upload_plugin_edittext_version" translatable="false">MCPE Version</string>
+     <string name="upload_plugin_edittext_link_to_download" translatable="false">Link to download (Only Mediafire)</string>
+     <string name="new_plugin_uploaded_toast" translatable="false">New plugin successfully published</string>
+     
+     <string name="authentication_activity_toolbar_text" translatable="false">Authentication</string>
+     <string name="authentication_activity_warning" translatable="false">Registration is required to protect against spam</string>
+     <string name="authentication_activity_login_text" translatable="false">Login</string>
+     <string name="authentication_activity_register_text" translatable="false">Register</string>
+     <string name="authentication_activity_btn_login_text" translatable="false">Continue</string>
+     <string name="authentication_activity_btn_register_text" translatable="false">Register</string>
+     <string name="authentication_activity_btn_resetpassword_text" translatable="false">Reset password</string>
+     <string name="authentication_activity_btn_have_account_text" translatable="false"> Already have an account?</string>
+     <string name="authentication_activity_edittext_username" translatable="false">Username</string>
+     <string name="authentication_activity_edittext_email" translatable="false">Email</string>
+     <string name="authentication_activity_edittext_password" translatable="false">Password</string>
+     <string name="authentication_activity_edittext_resetpassword" translatable="false">Password recovery email</string>
+     <string name="authentication_activity_verify_email_dialog_title" translatable="false">User verification</string>
+     <string name="authentication_activity_verify_email_dialog_message" translatable="false">An account confirmation email has been sent to your email. If you dont receive an email, check your spam.</string>
+     <string name="authentication_activity_verify_email_dialog_error_on_sending_toast" translatable="false">Failed to send confirmation email</string>
+     <string name="authentication_activity_startapp_successful_toast" translatable="false">Successful</string>
+     <string name="authentication_activity_onbackpressed_toast" translatable="false">Click again to exit</string>
+     <string name="authentication_activity_onresetpassword_successful_sent" translatable="false">Email recovery message sent</string>
+     <string name="authentication_activity_onresetpassword_error_sent" translatable="false">Failed to send, please try again.</string>
+     <string name="authentication_activity_onresetpassword_error_empty_edittext" translatable="false">Please fill in your email</string>
+     
+     <string name="no_internet_connection_dialog_title" translatable="false">No internet connection</string>
+     <string name="no_internet_connection_message" translatable="false">The application will not work properly</string>
+     <string name="no_internet_connection_dialog_message" translatable="false">There is no Internet connection. Check your Wi-Fi or mobile network settings and make sure youre connected to an available network.</string>
+     <string name="no_internet_connection_dialog_ok_button" translatable="false">Retry</string>
+     <string name="no_internet_connection_dialog_cancel_button" translatable="false">Exit</string>
+     
+     <string name="dialog_change_language_title" translatable="false">Choose language</string>
+     
+     <string name="dialog_settings_settings_text" translatable="false">Settings</string>
+     <string name="dialog_settings_support_text" translatable="false">Support</string>
+     <string name="dialog_settings_account_text" translatable="false">Account</string>
+     
+     <string name="settings_activity_change_language_text" translatable="false">App language</string>
+     <string name="settings_activity_profile_text" translatable="false">Profile</string>
+     <string name="settings_activity_version_text" translatable="false">App version</string>
+     <string name="settings_activity_privacy_policy_text" translatable="false">Privacy Policy</string>
+     <string name="settings_activity_terms_conditions_text" translatable="false">Terms Conditions</string>
+     
+       <string name="skins_for_mcpe_title_text" translatable="false">Skins for Minecraft PE</string>
+     <string name="skins_for_mcpe_description_text" translatable="false">Now you can diversify the game on older versions with the help of public skins</string>
+     <string name="skins_for_mcpe_button_text" translatable="false">Learn how to set a skin</string>
+     
+     <string name="modified_bl_title_text" translatable="false">Old BlockLauncher versions with new Android support</string>
+     <string name="modified_bl_description_text" translatable="false">A modified versions of BlockLauncher with new Android support</string>
+     <string name="modified_bl_download095_button_text" translatable="false">Download BlockLauncher for 0.9.5</string>
+     <string name="modified_bl_download081_button_text" translatable="false">Download BlockLauncher for 0.8.1</string>
+     <string name="modified_bl_download061_button_text" translatable="false">Download BlockLauncher for 0.6.1</string>
+     
+     <string name="wait_toast" translatable="false">Please wait...</string>
+</resources>

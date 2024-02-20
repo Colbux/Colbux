@@ -1,0 +1,632 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/contents"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#121212"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/content_home"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_skins"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="20dp"
+					android:padding="8dp"
+					android:background="#212121"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview_skins_mcpe_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Skins for Minecraft PE"
+							android:textSize="20sp"
+							android:textStyle="bold"
+							android:textColor="#FFFFFF" />
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="5dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="5dp"
+							android:background="#FFCC80"
+							android:text="0.8.1"
+							android:textSize="12sp"
+							android:textColor="#000000" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview_skins_mcpe_description"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Теперь вы можете разнообразить игру на старых версиях с помощью общедоступных скинов"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/btn_learn_how_to_set_a_skin"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#4CAF50"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Learn how to set a skin"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_blocklauncher"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="20dp"
+					android:padding="8dp"
+					android:background="#212121"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview_bl_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Old BlockLauncher versions with new Android support"
+							android:textSize="20sp"
+							android:textStyle="bold"
+							android:textColor="#FFFFFF"
+							android:layout_weight="1" />
+						<LinearLayout
+							android:id="@+id/linear7"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview13"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="8dp"
+								android:paddingLeft="8dp"
+								android:paddingTop="5dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="5dp"
+								android:background="#FFCC80"
+								android:text="0.9.5"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview11"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="8dp"
+								android:paddingLeft="8dp"
+								android:paddingTop="5dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="5dp"
+								android:background="#FFCC80"
+								android:text="0.8.1"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview10"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingLeft="8dp"
+								android:paddingTop="5dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="5dp"
+								android:background="#FFCC80"
+								android:text="0.6.1"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview_bl_description"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="A modified versions of BlockLauncher with new Android support"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/btn_download_bl095"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="8dp"
+						android:padding="8dp"
+						android:background="#4CAF50"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Download BlockLauncher for 0.9.5"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/btn_download_bl081"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="8dp"
+						android:padding="8dp"
+						android:background="#4CAF50"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Download BlockLauncher for 0.8.1"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/btn_download_bl061"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#4CAF50"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Download BlockLauncher for 0.6.1"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/content_modifications"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/modifications_tablayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#2A2831"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:id="@+id/textures_modifications_tab"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="#444444"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:id="@+id/textures_modifications_tab_item"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/textures_modifications_tab_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Текстуры"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/textures_modifications_tab_onclicked"
+							android:layout_width="match_parent"
+							android:layout_height="3dp"
+							android:background="#4CAF50"
+							android:orientation="horizontal"
+							android:padding="8dp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/mods_modifications_tab"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:id="@+id/mods_modifications_tab_item"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/mods_modifications_tab_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Моды"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/mods_modifications_tab_onclicked"
+							android:layout_width="match_parent"
+							android:layout_height="3dp"
+							android:orientation="horizontal"
+							android:padding="8dp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/maps_modifications_tab"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:id="@+id/maps_modifications_tab_item"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/maps_modifications_tab_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Карты"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/maps_modifications_tab_onclicked"
+							android:layout_width="match_parent"
+							android:layout_height="3dp"
+							android:orientation="horizontal"
+							android:padding="8dp" />
+					</LinearLayout>
+				</LinearLayout>
+				<ListView
+					android:id="@+id/listview_textures"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:dividerHeight="8dp"
+					android:choiceMode="none" />
+				<ListView
+					android:id="@+id/listview_mods"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:dividerHeight="9dp"
+					android:choiceMode="none" />
+				<ListView
+					android:id="@+id/listview_maps"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:dividerHeight="8dp"
+					android:choiceMode="none" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/content_servers"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+				<ListView
+					android:id="@+id/listview_servers"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:dividerHeight="8dp"
+					android:choiceMode="none" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/content_fordevs"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/fordevs_tablayout"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:background="#2A2831"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:id="@+id/plugins_fordevs_tab"
+						android:layout_width="100dp"
+						android:layout_height="match_parent"
+						android:background="#212121"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:id="@+id/plugins_fordevs_tab_item"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/plugins_fordevs_tab_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="6dp"
+								android:text="Плагины"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/plugins_fordevs_tab_onclicked"
+							android:layout_width="match_parent"
+							android:layout_height="3dp"
+							android:background="#4CAF50"
+							android:orientation="horizontal"
+							android:padding="8dp" />
+					</LinearLayout>
+				</LinearLayout>
+				<ListView
+					android:id="@+id/listview_plugins"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:dividerHeight="9dp"
+					android:choiceMode="none" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_webview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#121212"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_webview_toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/btn_close_webview"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:src="@drawable/ic_clear_white"
+						android:scaleType="center" />
+				</LinearLayout>
+				<ProgressBar
+					android:id="@+id/progressbar1"
+					android:layout_width="match_parent"
+					android:layout_height="5dp"
+					android:padding="8dp"
+					android:background="#121212"
+					android:indeterminate="false"
+					style="?android:progressBarStyleHorizontal" />
+				<WebView
+					android:id="@+id/webview1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/nav_s1"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:padding="8dp"
+			android:background="#000000"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/navigation_more"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:background="#242424"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" />
+
+		<LinearLayout
+			android:id="@+id/navigation"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#2A2831"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/nav_home"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="#212121"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/nav_home_item"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/nav_home_image"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/ic_home_white" />
+
+					<TextView
+						android:id="@+id/nav_home_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Главная"
+						android:textColor="#FFFFFF"
+						android:textSize="10sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/nav_home_onclicked"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:background="#4CAF50"
+					android:orientation="horizontal"
+					android:padding="8dp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/nav_modifications"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/nav_modifications_item"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/nav_modifications_image"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/ic_tools_white" />
+
+					<TextView
+						android:id="@+id/nav_modifications_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Модификации"
+						android:textColor="#FFFFFF"
+						android:textSize="10sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/nav_modifications_onclicked"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:orientation="horizontal"
+					android:padding="8dp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/nav_servers"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/nav_servers_item"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/nav_servers_image"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/ic_server_white" />
+
+					<TextView
+						android:id="@+id/nav_servers_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Сервера"
+						android:textColor="#FFFFFF"
+						android:textSize="10sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/nav_servers_onclicked"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:orientation="horizontal"
+					android:padding="8dp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/nav_fordevs"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/nav_fordevs_item"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:padding="8dp">
+
+					<ImageView
+						android:id="@+id/nav_fordevs_image"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/ic_code_tags" />
+
+					<TextView
+						android:id="@+id/nav_fordevs_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Pазработчикам"
+						android:textColor="#FFFFFF"
+						android:textSize="10sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/nav_fordev_onclicked"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:orientation="horizontal"
+					android:padding="8dp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

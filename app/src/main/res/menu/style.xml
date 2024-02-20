@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/italic"
+          android:showAsAction="always"
+          android:icon="@drawable/italic"
+          android:title="Italic"/>
+    <item android:id="@+id/bold"
+          android:showAsAction="always"
+          android:icon="@drawable/bold"
+          android:title="Bold"/>
+    <item android:id="@+id/underline"
+          android:showAsAction="always"
+          android:icon="@drawable/underline"
+          android:title="Underline"/>
+	<item android:id="@+id/strikethrough"
+          android:showAsAction="always"
+          android:icon="@drawable/strikethrough"
+          android:title="StrikeThrough"/>
+	<item android:id="@+id/textcolor"
+          android:showAsAction="always"
+          android:icon="@drawable/textcolor"
+          android:title="TextColor"/>
+	<item android:id="@+id/backgroundcolor"
+          android:showAsAction="always"
+          android:icon="@drawable/backgroundcolor"
+          android:title="BackgroundColor"/>
+	<item android:id="@+id/regular"
+          android:showAsAction="always"
+          android:icon="@drawable/regular"
+          android:title="Regular"/>
+</menu>

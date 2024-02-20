@@ -1,0 +1,201 @@
+<resources>
+	 <string name="app_name" translatable="false">Colbuxx</string>
+    <string name="nav_home_text" translatable="false">Главная</string>
+    <string name="nav_modifications_text" translatable="false">Модификации</string>
+    <string name="nav_servers_text" translatable="false">Сервера</string>
+    <string name="nav_fordevs_text" translatable="false">Pазработчикам</string>
+    <string name="textures_modifications_tab_text" translatable="false">Текстуры</string>
+    <string name="mods_modifications_tab_text" translatable="false">Моды</string>
+    <string name="maps_modifications_tab_text" translatable="false">Карты</string>
+    <string name="plugins_fordevs_tab_text" translatable="false">Плагины</string>
+    <string name="linear_download_blocklauncher_description" translatable="false">Скачайте модифицированную версию BlockLauncher для установки модов и патчей</string>
+    <string name="btn_download_blocklauncher" translatable="false">Скачать</string>
+    <string name="btn_forum_onlongclicked" translatable="false">Форум</string>
+     <string name="btn_upload_content_onlongclicked" translatable="false">Загрузить контент</string>
+     <string name="btn_settings_onlongclicked" translatable="false">Настройки</string>
+     <string name="copyServerData_onlongclicked" translatable="false">Копировать данные сервера</string>
+     <string name="copyServerData_onlongclicked_toast" translatable="false">Айпи и порт сервера скопированы</string>
+     <string name="serverDiscord" translatable="false">Ссылка на Discord</string>
+     <string name="download_button_text" translatable="false">Скачать</string>
+     <string name="btn_mod_more_info_onlongclicked" translatable="false">Подробная информация о моде</string>
+     <string name="btn_mod_more_info_error_not_founded_url" translatable="false">Не удалось найти URL</string>
+     <string name="btn_plugin_more_info_onlongclicked" translatable="false">Подробная информация о плагине</string>
+     <string name="btn_plugin_more_info_error_not_founded_url" translatable="false">Не удалось найти URL</string>
+     <string name="server_monitoring_text" translatable="false">Мониторинг сервера</string>
+     <string name="monitoring_onlongclicked" translatable="false">Ссылка на мониторинг</string>
+     <string name="server_doesnt_have_monitoring_toast" translatable="false">У сервера нету мониторинга</string>
+     <string name="btn_more_info_text" translatable="false">Больше информации</string>
+     <string name="btn_write_comment_text" translatable="false">Написать</string>
+     <string name="comments_text" translatable="false">Комментарии</string>
+     <string name="android_error_dialog_button1" translatable="false">Все равно перейти</string>
+     
+     <string name="download_title" translatable="false">Скачивание</string>
+     <string name="download_dialog_download_started_toast" translatable="false">Скачивание началось</string>
+     <string name="download_dialog_download_successful_toast" translatable="false">Успешно скачано</string>
+     <string name="download_dialog_error_title" translatable="false">Ошибка</string>
+     <string name="download_dialog_error_message" translatable="false">Произошла ошибка при попытке получить ссылку для скачивания.  Пожалуйста, попробуйте еще раз.</string>
+     <string name="download_dialog_error_not_founded_url" translatable="false">Не удалось найти URL для скачивания</string>
+     <string name="download_dialog_error_url_has_expired" translatable="false">Срок действия ссылки на скачивание истёк</string>
+     <string name="settings_activity_toolbar_text" translatable="false">Настройки</string>
+     <string name="settings_activity_linear_language_text" translatable="false">Язык</string>
+     <string name="upload_content_dialog_title" translatable="false">Что вы хотите опубликовать?</string>
+     <string name="upload_content_dialog_cancel_button" translatable="false">Закрыть</string>
+     
+     <string name="uploading_file_dialog_title" translatable="false">Загрузка файлов на сервер</string>
+     <string name="uploading_file_dialog_message" translatable="false">Это может занять некоторое время. Не закрывайте это окно.</string>
+     <string name="uploading_file_successful" translatable="false">Файл успешно загружен</string>
+     <string name="uploading_banner_successfully" translatable="false">Баннер успешно загружен</string>
+     
+     <string name="uploaded_by_text" translatable="false">Опубликовал</string>
+     
+     <string name="open_link_dialog_title" translatable="false">Переход по ссылке</string>
+     <string name="open_link_dialog_message" translatable="false">Вы уверены, что хотите перейти на⠀</string>
+     <string name="open_link_dialog_ok_button" translatable="false">Да</string>
+     <string name="open_link_dialog_cancel_button" translatable="false">Отмена</string>
+     
+     <string name="setting_popup_upload_content_text" translatable="false">Опубликовать контент</string>
+     <string name="setting_popup_change_language_text" translatable="false">Изменить язык</string>
+     <string name="setting_popup_skin_manager_text" translatable="false">Менеджер скинов</string>
+     <string name="setting_popup_help_text" translatable="false">Помощь</string>
+     <string name="setting_popup_forum_text" translatable="false">Форум</string>
+     <string name="setting_popup_profile_text" translatable="false">Профиль</string>
+     <string name="setting_popup_logout_text" translatable="false">Выйти из аккаунта</string>
+     
+     <string name="upload_content_title" translatable="false">Опубликовать контент</string>
+     <string name="upload_content_description" translatable="false">Что вы хотите опубликовать?</string>
+     <string name="upload_content_name_text" translatable="false">Название</string>
+     <string name="upload_content_description_text" translatable="false">Краткое описание</string>
+     <string name="upload_content_full_description_text" translatable="false">Полное описание</string>
+     <string name="upload_content_mcpe_version_text" translatable="false">Версия MCPE</string>
+     <string name="upload_content_link_to_banner_text" translatable="false">Баннер</string>
+     <string name="upload_content_link_to_download_text" translatable="false">Файл</string>
+     <string name="upload_content_link_to_more_info_text" translatable="false">Ссылка на дополнительную информацию, если есть</string>
+     <string name="upload_content_link_to_monitoring_text" translatable="false">Ссылка на мониторинг</string>
+     <string name="upload_content_more_info_text" translatable="false">Подробная информация</string>
+     <string name="upload_content_data_text" translatable="false">Айпи и порт</string>
+     <string name="upload_content_link_to_discord_text" translatable="false">Ссылка на Discord</string>
+     <string name="upload_content_apiversion_text" translatable="false">Версия PocketMine / другое</string>
+     <string name="texture_text" translatable="false">Текстуру</string>
+     <string name="mod_text" translatable="false">Мод</string>
+     <string name="map_text" translatable="false">Карту</string>
+     <string name="server_text" translatable="false">Сервер</string>
+     <string name="plugin_text" translatable="false">Плагин</string>
+     <string name="fill_in_all_the_fields_toast" translatable="false">Заполните все поля</string>
+     <string name="choose_file_toast" translatable="false">Выберите файл для скачивания</string>
+     <string name="choose_banner_toast" translatable="false">Выберите изображение для баннера</string>
+     <string name="file_size_error_toast" translatable="false">Pазмер файла не может превышать 25 МБ</string>
+     <string name="empty_file_error_toast" translatable="false">Невозможно загрузить пустой файл</string>
+     <string name="file_not_found_toast" translatable="false">Файл не найден</string>
+     <string name="android_error_dialog_title" translatable="false">Внимание</string>
+     <string name="android_error_dialog_message" translatable="false">К сожалению загрузка контента недоступна для Android 12+</string>
+     
+     <string name="upload_texture_title" translatable="false">Опубликовать новую текстуру</string>
+     <string name="upload_texture_message" translatable="false">Заполните все поля</string>
+     <string name="upload_texture_ok_button" translatable="false">Опубликовать</string>
+     <string name="upload_texture_cancel_button" translatable="false">Отмена</string>
+     <string name="upload_texture_edittext_name" translatable="false">Название текстуры</string>
+     <string name="upload_texture_edittext_description" translatable="false">Описание</string>
+     <string name="upload_texture_edittext_version" translatable="false">Версия MCPE</string>
+     <string name="upload_texture_edittext_link_to_banner" translatable="false">Ссылка на баннер</string>
+     <string name="upload_texture_edittext_link_to_download" translatable="false">Ссылка на скачивание (Только Mediafire)</string>
+     <string name="new_texture_uploaded_toast" translatable="false">Новая текстура успешно опубликована</string>
+     
+     <string name="upload_mod_title" translatable="false">Опубликовать новый мод</string>
+     <string name="upload_mod_message" translatable="false">Заполните все поля</string>
+     <string name="upload_mod_ok_button" translatable="false">Опубликовать</string>
+     <string name="upload_mod_cancel_button" translatable="false">Отмена</string>
+     <string name="upload_mod_edittext_name" translatable="false">Название мода</string>
+     <string name="upload_mod_edittext_description" translatable="false">Описание</string>
+     <string name="upload_mod_edittext_version" translatable="false">Версия MCPE</string>
+     <string name="upload_mod_edittext_moreinfo" translatable="false">Подробная информация о моде</string>
+     <string name="upload_mod_edittext_link_to_download" translatable="false">Ссылка на скачивание (Только Mediafire)</string>
+     <string name="new_mod_uploaded_toast" translatable="false">Новый мод успешно опубликован</string>
+     
+     <string name="upload_map_title" translatable="false">Опубликовать новую карту</string>
+     <string name="upload_map_message" translatable="false">Заполните все поля</string>
+     <string name="upload_map_ok_button" translatable="false">Опубликовать</string>
+     <string name="upload_map_cancel_button" translatable="false">Отмена</string>
+     <string name="upload_map_edittext_name" translatable="false">Название карты</string>
+     <string name="upload_map_edittext_version" translatable="false">Версия MCPE</string>
+     <string name="upload_map_edittext_link_to_banner" translatable="false">Ссылка на баннер</string>
+     <string name="upload_map_edittext_link_to_download" translatable="false">Ссылка на скачивание (Только Mediafire)</string>
+     <string name="new_map_uploaded_toast" translatable="false">Новая карта успешно опубликована</string>
+     
+     <string name="upload_server_title" translatable="false">Опубликовать новый сервер</string>
+     <string name="upload_server_message" translatable="false">Заполните все поля</string>
+     <string name="upload_server_ok_button" translatable="false">Опубликовать</string>
+     <string name="upload_server_cancel_button" translatable="false">Отмена</string>
+     <string name="upload_server_edittext_name" translatable="false">Название сервера</string>
+     <string name="upload_server_edittext_description" translatable="false">Краткое описание сервера</string>
+     <string name="upload_server_edittext_ip" translatable="false">Айпи</string>
+     <string name="upload_server_edittext_port" translatable="false">Порт</string>
+     <string name="upload_server_edittext_version" translatable="false">Версия MCPE</string>
+     <string name="upload_server_edittext_link_to_discord" translatable="false">Ссылка на Discord</string>
+     <string name="upload_server_edittext_link_to_banner" translatable="false">Ссылка на баннер</string>
+     <string name="upload_server_edittext_link_to_monitoring" translatable="false">Ссылка на мониторинг</string>
+     <string name="new_server_uploaded_toast" translatable="false">Новый сервер успешно опубликован</string>
+     
+     <string name="upload_plugin_title" translatable="false">Опубликовать новый плагин</string>
+     <string name="upload_plugin_message" translatable="false">Заполните все поля</string>
+     <string name="upload_plugin_ok_button" translatable="false">Опубликовать</string>
+     <string name="upload_plugin_cancel_button" translatable="false">Отмена</string>
+     <string name="upload_plugin_edittext_name" translatable="false">Название плагина</string>
+     <string name="upload_plugin_edittext_description" translatable="false">Краткое описание плагина</string>
+     <string name="upload_plugin_edittext_full_description" translatable="false">Полное описание плагина</string>
+     <string name="upload_plugin_edittext_api" translatable="false">Версия API / PHP</string>
+     <string name="upload_plugin_edittext_more_info" translatable="false">Ссылка на подробную информацию о плагине</string>
+     <string name="upload_plugin_edittext_version" translatable="false">Версия MCPE</string>
+     <string name="upload_plugin_edittext_link_to_download" translatable="false">Ссылка на скачивание (Только Mediafire)</string>
+     <string name="new_plugin_uploaded_toast" translatable="false">Новый плагин успешно опубликован</string>
+     
+     <string name="authentication_activity_toolbar_text" translatable="false">Аутентификация</string>
+     <string name="authentication_activity_warning" translatable="false">Регистрация необходима для защиты от спама</string>
+     <string name="authentication_activity_login_text" translatable="false">Вход</string>
+     <string name="authentication_activity_register_text" translatable="false">Регистрация</string>
+     <string name="authentication_activity_btn_login_text" translatable="false">Продолжить</string>
+     <string name="authentication_activity_btn_register_text" translatable="false">Регистрация</string>
+     <string name="authentication_activity_btn_resetpassword_text" translatable="false">Восстановить пароль</string>
+     <string name="authentication_activity_btn_have_account_text" translatable="false"> Уже есть аккаунт?</string>
+     <string name="authentication_activity_edittext_username" translatable="false">Имя пользователя</string>
+     <string name="authentication_activity_edittext_email" translatable="false">Email</string>
+     <string name="authentication_activity_edittext_password" translatable="false">Пароль</string>
+     <string name="authentication_activity_edittext_resetpassword" translatable="false">Email для восстановления пароля</string>
+     <string name="authentication_activity_verify_email_dialog_title" translatable="false">Подтверждение пользователя</string>
+     <string name="authentication_activity_verify_email_dialog_message" translatable="false">На вашу электронную почту отправлено письмо с подтверждением учетной записи.  Если вы не получили письмо, проверьте спам.</string>
+     <string name="authentication_activity_verify_email_dialog_error_on_sending_toast" translatable="false">Не удалось отправить электронное письмо с подтверждением</string>
+     <string name="authentication_activity_startapp_successful_toast" translatable="false">Успешно</string>
+     <string name="authentication_activity_onbackpressed_toast" translatable="false">Нажмите еще раз, чтобы выйти</string>
+     <string name="authentication_activity_onresetpassword_successful_sent" translatable="false">Письмо для восстановления электронной почты отправлено</string>
+     <string name="authentication_activity_onresetpassword_error_sent" translatable="false">Не удалось отправить, попробуйте еще раз.</string>
+     <string name="authentication_activity_onresetpassword_error_empty_edittext" translatable="false">Пожалуйста, заполните поле с адресом электронной почты</string>
+     
+     <string name="no_internet_connection_dialog_title" translatable="false">Отсутствует подключение к Интернету</string>
+     <string name="no_internet_connection_message" translatable="false">Приложение будет работать неправильно</string>
+     <string name="no_internet_connection_dialog_message" translatable="false">Отсутствует подключение к Интернету. Проверьте настройки Wi-Fi или мобильной сети и убедитесь, что вы подключены к доступной сети.</string>
+     <string name="no_internet_connection_dialog_ok_button" translatable="false">Повторить</string>
+     <string name="no_internet_connection_dialog_cancel_button" translatable="false">Выйти</string>
+     
+     <string name="dialog_change_language_title" translatable="false">Выберите язык</string>
+     
+     <string name="dialog_settings_settings_text" translatable="false">Настройки</string>
+     <string name="dialog_settings_support_text" translatable="false">Поддержка</string>
+     <string name="dialog_settings_account_text" translatable="false">Аккаунт</string>
+     
+     <string name="settings_activity_change_language_text" translatable="false">Язык приложения</string>
+     <string name="settings_activity_profile_text" translatable="false">Профиль</string>
+     <string name="settings_activity_version_text" translatable="false">Версия приложения</string>
+     <string name="settings_activity_privacy_policy_text" translatable="false">Политика конфиденциальности</string>
+     <string name="settings_activity_terms_conditions_text" translatable="false">Условия использования</string>
+     
+     <string name="skins_for_mcpe_title_text" translatable="false">Скины для Майнкрафт ПЕ</string>
+     <string name="skins_for_mcpe_description_text" translatable="false">Теперь вы можете разнообразить игру на старых версиях с помощью общедоступных скинов</string>
+     <string name="skins_for_mcpe_button_text" translatable="false">Узнайте, как установить скин</string>
+     
+     <string name="modified_bl_title_text" translatable="false">BlockLauncher с новой поддержкой Android</string>
+     <string name="modified_bl_description_text" translatable="false">Модифицированные версии BlockLauncher с новой поддержкой Android</string>
+     <string name="modified_bl_download095_button_text" translatable="false">Скачать BlockLauncher для версии 0.9.5</string>
+     <string name="modified_bl_download081_button_text" translatable="false">Скачать BlockLauncher для версии 0.8.1</string>
+     <string name="modified_bl_download061_button_text" translatable="false">Скачать BlockLauncher для версии 0.6.1</string>
+     
+     <string name="wait_toast" translatable="false">Подождите пожалуйста...</string>
+</resources>
