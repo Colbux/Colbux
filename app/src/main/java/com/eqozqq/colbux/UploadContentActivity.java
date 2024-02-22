@@ -84,13 +84,6 @@ public class UploadContentActivity extends AppCompatActivity {
 	private Toolbar _toolbar;
 	private AppBarLayout _app_bar;
 	private CoordinatorLayout _coordinator;
-	private String dlink = "";
-	private String filename = "";
-	private String ext = "";
-	private double dl_progress = 0;
-	private double positions = 0;
-	private double num = 0;
-	private String fileName = "";
 	private String textureName = "";
 	private String textureInfoUrl = "";
 	private String textureDownloadUrl = "";
@@ -98,14 +91,10 @@ public class UploadContentActivity extends AppCompatActivity {
 	private String modInfoUrl = "";
 	private String modDownloadUrl = "";
 	private String mapName = "";
-	private String mapInfoUrl = "";
 	private String mapDownloadUrl = "";
-	private String trumbnailMapUrl = "";
 	private String serverName = "";
-	private String serverData = "";
 	private String serverVersion = "";
 	private String serverDiscordUrl = "";
-	private String serverIpPort = "";
 	private String textureVersion = "";
 	private String textureDescription = "";
 	private String modVersion = "";
@@ -113,18 +102,11 @@ public class UploadContentActivity extends AppCompatActivity {
 	private String mapVersion = "";
 	private String trumbnailTextureUrl = "";
 	private String trumbnailServerUrl = "";
-	private String trumbnailModUrl = "";
 	private String serverDescription = "";
 	private HashMap<String, Object> TexturesMap = new HashMap<>();
 	private HashMap<String, Object> ModsMap = new HashMap<>();
 	private HashMap<String, Object> MapsMap = new HashMap<>();
-	private HashMap<String, Object> map = new HashMap<>();
 	private HashMap<String, Object> ServersMap = new HashMap<>();
-	private String thumbnailTextureUrl = "";
-	private String thumbnailModUrl = "";
-	private String thumbnailMapUrl = "";
-	private String thumbnailServerUrl = "";
-	private double moreModifications = 0;
 	private HashMap<String, Object> PluginsMap = new HashMap<>();
 	private String pluginName = "";
 	private String pluginDescription = "";
@@ -132,30 +114,16 @@ public class UploadContentActivity extends AppCompatActivity {
 	private String pluginAPI = "";
 	private String pluginDownloadUrl = "";
 	private String pluginInfoUrl = "";
-	private double Position = 0;
-	private HashMap<String, Object> authMap = new HashMap<>();
-	private String uploadfilepath = "";
-	private String uploadfilename = "";
-	private double progress = 0;
-	private double progressdownload = 0;
-	private String downloadurl = "";
 	private String serverIp = "";
 	private String serverPort = "";
-	private String serversUploadFilePath = "";
-	private String serversUploadFileName = "";
-	private double serversProgress = 0;
-	private double serversDownloadProgress = 0;
-	private String serversImageUrl = "";
 	private double texturesUploadProgress = 0;
 	private String texturesUploadFileName = "";
 	private String texturesUploadFilePath = "";
 	private String serversUploadBannerPath = "";
 	private String serversUploadBannerName = "";
-	private double serversUploadProgress = 0;
 	private String texturesUploadBannerPath = "";
 	private String texturesUploadBannerName = "";
 	private double texturesUploadBannerProgress = 0;
-	private String pluginsUploader = "";
 	private String modsUploadFilePath = "";
 	private String modsUploadFileName = "";
 	private double modsUploadProgress = 0;
@@ -170,9 +138,7 @@ public class UploadContentActivity extends AppCompatActivity {
 	private String pluginsUploadFileName = "";
 	private double pluginsUploadProgress = 0;
 	private String serverMonitoringUrl = "";
-	private HashMap<String, Object> usernamesMap = new HashMap<>();
 	private String pluginFullDescription = "";
-	private boolean checkPermission1 = false;
 	
 	private ArrayList<HashMap<String, Object>> serversmap = new ArrayList<>();
 	private ArrayList<HashMap<String, Object>> texturesmap = new ArrayList<>();
@@ -2830,7 +2796,7 @@ public class UploadContentActivity extends AppCompatActivity {
 			@Override
 			public void onComplete(Task<Uri> _param1) {
 				final String _downloadUrl = _param1.getResult().toString();
-				trumbnailMapUrl = _downloadUrl;
+				String trumbnailMapUrl = _downloadUrl;
 				mapLinkToBannerText.setText(_downloadUrl);
 				Glide.with(getApplicationContext()).load(Uri.parse(_downloadUrl)).into(map_banner);
 				_Toast(getString(R.string.uploading_banner_successfully));

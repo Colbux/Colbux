@@ -33,9 +33,6 @@ import java.util.regex.*;
 import org.json.*;
 
 public class MainActivity extends AppCompatActivity {
-	
-	private Intent i = new Intent();
-	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);

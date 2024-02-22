@@ -57,7 +57,7 @@ import org.json.*;
 
 public class CommentsActivity extends AppCompatActivity {
 	
-	private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
+	private final FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
 	
 	private HashMap<String, Object> commentsMap = new HashMap<>();
 	
@@ -69,13 +69,10 @@ public class CommentsActivity extends AppCompatActivity {
 	private TextView toolbar_text;
 	private EditText edittext_post_comment;
 	private ImageView btn_post_comment;
-	
-	private Intent i = new Intent();
+
 	private DatabaseReference comments = _firebase.getReference("comments");
 	private ChildEventListener _comments_child_listener;
 	private Calendar c = Calendar.getInstance();
-	private AlertDialog.Builder d;
-	private SharedPreferences file;
 	private SharedPreferences user;
 	
 	@Override
@@ -94,8 +91,8 @@ public class CommentsActivity extends AppCompatActivity {
 		toolbar_text = findViewById(R.id.toolbar_text);
 		edittext_post_comment = findViewById(R.id.edittext_post_comment);
 		btn_post_comment = findViewById(R.id.btn_post_comment);
-		d = new AlertDialog.Builder(this);
-		file = getSharedPreferences("file", Activity.MODE_PRIVATE);
+		AlertDialog.Builder d = new AlertDialog.Builder(this);
+		SharedPreferences file = getSharedPreferences("file", Activity.MODE_PRIVATE);
 		user = getSharedPreferences("user", Activity.MODE_PRIVATE);
 		
 		listview1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {

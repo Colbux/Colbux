@@ -77,8 +77,7 @@ import java.util.regex.*;
 import org.json.*;
 
 public class InfoActivity extends AppCompatActivity {
-	
-	private Timer _timer = new Timer();
+
 	private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
 	private FirebaseStorage _firebase_storage = FirebaseStorage.getInstance();
 	
@@ -91,7 +90,6 @@ public class InfoActivity extends AppCompatActivity {
 	private double texturesCommentNum = 0;
 	private double modsCommentNum = 0;
 	private String filePath = "";
-	private String fileName = "";
 	
 	private ArrayList<HashMap<String, Object>> listmap = new ArrayList<>();
 	private ArrayList<HashMap<String, Object>> textureCommentsMap = new ArrayList<>();
@@ -150,7 +148,6 @@ public class InfoActivity extends AppCompatActivity {
 	private DatabaseReference modComments = _firebase.getReference("comments/mods/");
 	private ChildEventListener _modComments_child_listener;
 	private SharedPreferences language;
-	private TimerTask t;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {

@@ -1,5 +1,6 @@
 package com.eqozqq.colbux;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -43,24 +44,11 @@ import com.google.android.gms.tasks.*;
 
 
 public class AuthActivity extends AppCompatActivity {
-	
-	private Timer _timer = new Timer();
+
 	private FirebaseDatabase _firebase = FirebaseDatabase.getInstance();
 	
 	private HashMap<String, Object> authMap = new HashMap<>();
-	private double num = 0;
-	private String imagePath = "";
-	private String imageName = "";
-	private HashMap<String, Object> usernamesMap = new HashMap<>();
-	private String c1 = "";
-	private String c2 = "";
-	private String c3 = "";
-	private String c4 = "";
-	private String c5 = "";
-	private String c6 = "";
 	private String captcha_answer = "";
-	
-	private ArrayList<HashMap<String, Object>> authmap = new ArrayList<>();
 	
 	private LinearLayout welcome_bg;
 	private LinearLayout register_bg;
@@ -138,7 +126,6 @@ public class AuthActivity extends AppCompatActivity {
 	private Intent i = new Intent();
 	private AlertDialog.Builder d;
 	private Calendar c = Calendar.getInstance();
-	private TimerTask t;
 	private SharedPreferences files;
 	private SharedPreferences user;
 	
@@ -154,7 +141,10 @@ public class AuthActivity extends AppCompatActivity {
 			w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 			w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(0xFF2A2831);
 		}
-
+		Window w = AuthActivity.this.getWindow();
+		w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+		w.setStatusBarColor(0xFF2A2831);
 
 		FirebaseApp.initializeApp(this);
 		initializeLogic();
@@ -477,7 +467,7 @@ public class AuthActivity extends AppCompatActivity {
 					authMap.put("email", edittext_register_email.getText().toString());
 					users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).updateChildren(authMap);
 					_send_verification_mail();
-					user.edit().putString("username", edittext_register_username.getText().toString()).commit();
+					user.edit().putString("username", edittext_register_username.getText().toString()).apply();
 					welcome_bg.setVisibility(View.GONE);
 					register_bg.setVisibility(View.GONE);
 					login_bg.setVisibility(View.VISIBLE);
@@ -563,52 +553,52 @@ public class AuthActivity extends AppCompatActivity {
 	public boolean _valid_inputs() {
 		if (edittext_register_username.getText().toString().trim().equals("")) {
 			((EditText)edittext_register_username).setError("Please fill the blank");
-			return (false);
+			return false;
 		}
 		if (edittext_register_email.getText().toString().trim().equals("")) {
 			((EditText)edittext_register_email).setError("Please fill the blank");
-			return (false);
+			return false;
 		}
 		if (edittext_register_password.getText().toString().trim().equals("")) {
 			((EditText)edittext_register_password).setError("Please fill the blank");
-			return (false);
+			return false;
 		}
-		return (true);
+		return true;
 	}
-	
-	
+
+
 	public boolean _login_valid_inputs() {
 		if (edittext_login_email.getText().toString().trim().equals("")) {
-			((EditText)edittext_login_email).setError("Please fill the blank");
-			return (false);
+			edittext_login_email.setError("Please enter the email");
+			return false;
 		}
 		if (edittext_login_password.getText().toString().trim().equals("")) {
-			((EditText)edittext_login_password).setError("Please fill the blank");
-			return (false);
+			edittext_login_password.setError("Please enter the password");
+			return false;
 		}
-		return (true);
+		return true;
 	}
-	
-	
+
+
 	public void _send_verification_mail() {
 		FirebaseAuth auth = FirebaseAuth.getInstance();
-		com.google.firebase.auth.FirebaseUser user = 
-		auth.getCurrentUser();
-		
+		com.google.firebase.auth.FirebaseUser user = auth.getCurrentUser();
+		if(user == null) return;
+
 		user.sendEmailVerification().addOnCompleteListener
-		(new 
+		(new
 		OnCompleteListener<Void>()
 		{ @Override
 			public void onComplete(Task task)
 			{ if (task.isSuccessful()) {
-					
+
 					d = new AlertDialog.Builder(AuthActivity.this,AlertDialog.THEME_DEVICE_DEFAULT_DARK);
 					d.setTitle("User verification");
 					d.setMessage("A confirmation email will be sent to your address.\nIf you can't find the message, check Spam.");
 					d.setPositiveButton("ОК", new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface _dialog, int _which) {
-							
+
 						}
 					});
 					d.create().show();
@@ -616,20 +606,20 @@ public class AuthActivity extends AppCompatActivity {
 					    _Toast("Unable to send verification email");
 				}
 			}});
-		
+
 	}
-	
-	
+
+
 	public boolean _isEmailVerified() {
 		FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-		return user.isEmailVerified();
-		
+		return user != null && user.isEmailVerified();
+
 	}
-	
-	
+
+
 	public void _save_auth_token() {
 		FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
-		
+
 		user.getIdToken(true).addOnSuccessListener(new OnSuccessListener<GetTokenResult>() {
 			  @Override
 			  public void onSuccess(GetTokenResult result) {
@@ -699,20 +689,23 @@ public class AuthActivity extends AppCompatActivity {
 	}
 	
 	
+	@SuppressLint("DefaultLocale")
 	public void _Captcha() {
-		captcha_num1.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		captcha_num2.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		captcha_num3.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		captcha_num4.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		captcha_num5.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		captcha_num6.setText(String.valueOf((long)(ColbuxUtil.getRandom((int)(0), (int)(9)))));
-		c1 = captcha_num1.getText().toString();
-		c2 = captcha_num2.getText().toString();
-		c3 = captcha_num3.getText().toString();
-		c4 = captcha_num4.getText().toString();
-		c5 = captcha_num5.getText().toString();
-		c6 = captcha_num6.getText().toString();
-		captcha_answer = c1.concat(c2.concat(c3.concat(c4.concat(c5).concat(c6))));
+		String c1 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+		String c2 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+		String c3 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+		String c4 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+		String c5 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+		String c6 = String.valueOf(ColbuxUtil.getRandom(0, 9));
+
+		captcha_num1.setText(c1);
+		captcha_num2.setText(c2);
+		captcha_num3.setText(c3);
+		captcha_num4.setText(c4);
+		captcha_num5.setText(c5);
+		captcha_num6.setText(c6);
+
+		captcha_answer = c1+c2+c3+c4+c5+c6; //whats the point if the answer is written here?
 	}
 	
 }
